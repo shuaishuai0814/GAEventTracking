@@ -1,0 +1,28 @@
+{
+  "name": "GAEventTracking",
+  "version": "0.1.0",
+  "summary": "A short description of GAEventTracking.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/shuaishuai0814/GAEventTracking",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "shuaishuai0814": "wangshuai331@jd.com"
+  },
+  "source": {
+    "git": "https://github.com/shuaishuai0814/GAEventTracking.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "GAEventTracking/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 4.0"
+    ]
+  }
+}

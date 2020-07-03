@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		02386689E3F305FAEA3D35B0 /* Pods-GAEventTracking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAEventTracking_Tests.release.xcconfig"; path = "Target Support Files/Pods-GAEventTracking_Tests/Pods-GAEventTracking_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		07D764CB1F4584049D0AA4DF /* GAEventTracking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GAEventTracking.podspec; path = ../GAEventTracking.podspec; sourceTree = "<group>"; };
+		07D764CB1F4584049D0AA4DF /* GAEventTracking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GAEventTracking.podspec; path = ../GAEventTracking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1D7D039A81346AD398877069 /* Pods-GAEventTracking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAEventTracking_Example.release.xcconfig"; path = "Target Support Files/Pods-GAEventTracking_Example/Pods-GAEventTracking_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3365824DCDB8834B652A37D2 /* Pods-GAEventTracking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAEventTracking_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GAEventTracking_Tests/Pods-GAEventTracking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* GAEventTracking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAEventTracking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,8 +65,8 @@
 		77BC4943D4E8C6E83EF23EDE /* Pods_GAEventTracking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAEventTracking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		870E4012093ABE770F8A39C2 /* Pods_GAEventTracking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAEventTracking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B99D1EC3E1CC02954E28C5A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DA6B845F4AB13816212D3B77 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B99D1EC3E1CC02954E28C5A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DA6B845F4AB13816212D3B77 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				3365824DCDB8834B652A37D2 /* Pods-GAEventTracking_Tests.debug.xcconfig */,
 				02386689E3F305FAEA3D35B0 /* Pods-GAEventTracking_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,10 +324,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GAEventTracking_Example/Pods-GAEventTracking_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/GAEventTracking/GAEventTracking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GAEventTracking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

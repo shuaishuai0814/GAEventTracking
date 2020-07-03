@@ -1,0 +1,6 @@
+framework module GAEventTracking {
+  umbrella header "GAEventTracking-umbrella.h"
+
+  export *
+  module * { export * }
+}
