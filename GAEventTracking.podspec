@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GAEventTracking'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of GAEventTracking.'
+  s.summary          = '埋点组件 GAEventTracking.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Gaia 组件库 埋点.
                        DESC
 
   s.homepage         = 'https://github.com/shuaishuai0814/GAEventTracking'
@@ -26,6 +26,8 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'shuaishuai0814' => 'wangshuai331@jd.com' }
   s.source           = { :git => 'https://github.com/shuaishuai0814/GAEventTracking.git', :tag => s.version.to_s }
+  # 本地打包 source 资源设置
+  # s.source           = { :git => "/Users/wangshuai331/Workspace/GAComponents/GAEventTracking" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
